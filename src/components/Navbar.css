@@ -1,0 +1,157 @@
+.navbar{
+    position: fixed;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: fixed;
+    height: 100px;
+    width: 100%;
+    box-shadow: #424242;
+    z-index: 50;
+    background: #ffffff;
+
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    color: #424242;
+    background: #000000;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.navbar button:hover{
+    background-color: white;
+    scale: 1.5;
+    color: black;
+
+}
+
+.navbar .active{
+    padding-bottom: 0px;
+    border-bottom:  2px solid #15a2d1;
+}
+
+.navbar li{
+    cursor: pointer;
+}
+
+.navbar-search-icon{
+    position: relative;
+
+}
+
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: #d22e47   ;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+
+@media (max-width:1050px){
+
+
+    .navbar .logo{
+        
+        width: 90PX;
+    }
+
+    .navbar-menu{
+        gap: 15px;
+        font-size: 17px;
+
+
+    }
+
+    .navbar-right{
+        gap: 20px;
+
+    }
+
+    .navbar-right button{
+        padding: 10px 10px;
+    }
+
+}
+
+
+@media (max-width:900px){
+
+    .navbar .logo{
+        
+        width: 90PX;
+    }
+
+    .navbar-menu{
+        gap: 10px;
+        font-size: 15px;
+
+    }
+
+    .navbar-right{
+        gap: 15px;
+
+    }
+
+    .navbar-right button{
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width:750px){
+
+
+    .navbar-menu{
+        display: none;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .navbar-search-icon{
+        display:block;
+
+    }
+
+    .navbar-right button{
+        display: none;
+    }
+
+}
